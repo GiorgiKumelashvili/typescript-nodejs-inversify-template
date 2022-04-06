@@ -2,32 +2,28 @@
 
 # Pre-reqs
 
-- Install [Node.js](https://nodejs.org/en/)
-- Install [VS Code](https://code.visualstudio.com/)
+-   Install [Node.js](https://nodejs.org/en/)
+-   Install [VS Code](https://code.visualstudio.com/)
 
 # Getting started
 
-- Clone the repository
+-   Clone the repository
 
 ```
 git clone https://github.com/greenroach/express-ts-template.git
 ```
 
-- Install dependencies
+-   Install dependencies
 
 ```
 cd <project_name>
-npm install
+yarn
+yarn watch
 ```
 
-- Build and run the project
+## Navigate to http://localhost:3000
 
-```
-npm run build
-npm start
-```
-
-Navigate to `http://localhost:3000`
+<br />
 
 ### Using the debugger in VS Code
 
@@ -40,11 +36,11 @@ In this file, you can tell VS Code exactly what you want to do:
 
 ```json
 {
-  "type": "node",
-  "request": "attach",
-  "name": "Attach by Process ID",
-  "processId": "${command:PickProcess}",
-  "protocol": "inspector"
+    "type": "node",
+    "request": "attach",
+    "name": "Attach by Process ID",
+    "processId": "${command:PickProcess}",
+    "protocol": "inspector"
 }
 ```
 
@@ -56,5 +52,3 @@ You will probably have multiple node processes running, so you need to find the 
 Now just set your breakpoints and go!
 
 ---
-
-Based on [TypeScript Node Starter](https://github.com/Microsoft/TypeScript-Node-Starter) and [Express Generator](https://github.com/expressjs/generator)
